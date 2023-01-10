@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url("./background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.signup{
+    width: 325px;
+    height:500px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)50%,(0,0,0,0.8)50%);
+    position:relative;
+    top: 120px;
+    border-radius: 15px;
+    padding: 25px;
+    margin:0px 850px;
+    border: 1px solid wheat;
+    background-color: white;
+}
+input{
+    
+    margin:auto;
+}

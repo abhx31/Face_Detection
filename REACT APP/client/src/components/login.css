@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url("./background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.login-card{
+    width: 250px;
+    height:390px;
+    background: linear-gradient(to top,rgba(0,0,0,0.8)70%,(0,0,0,0.8)70%);
+    position:relative;
+    top: 120px;
+    border-radius: 15px;
+    padding: 25px;
+    margin:0px 850px;
+    border: 2px solid black;
+    background-color: white;
+    opacity: 100;
+}  
+.button{
+    border-radius: 5px;
+    size: 10px;
+    padding: 5px;
+} 
+.button:hover{
+    cursor: pointer;
+}

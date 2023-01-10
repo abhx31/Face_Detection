@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url("./homepagebg.png");
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    position: absolute;
+}
+.header{
+    margin: 0px 0px;
+    color: orange;
+    margin:15px 84px;
+}
+.table{
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    margin-top: 120px;
+    margin-left: 20px;
+    width: 50%;
+    height:300px;
+    border: 1px solid white;
+    border-radius: 6px;
+    
+}
+.button1{
+    margin-left: 250px;
+    background-color: orange;
+    font: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    
+
+}
+.button2{
+    margin: 10px;
+    background-color: orange;
+    font: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px;
+    cursor:pointer
+
+}
