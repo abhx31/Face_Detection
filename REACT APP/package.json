@@ -8,7 +8,7 @@
     "client":"cd client && npm start",
     "dev":"concurrently \"nodemon server.js\" \"npm run client\""
   },
-  "author": "sanjuth reddy",
+  "author": "Abhinav",
   "license": "ISC",
   "dependencies": {
     "@emotion/react": "^11.10.4",

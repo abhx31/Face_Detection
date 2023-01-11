@@ -72,99 +72,105 @@ const Homepage = (props) => {
   }
 
   return (
-    <div className="home">
-      <div className="homepage">
-        <h1 className="message">Welcome {props.details.user.name} !!!</h1>
-        <input className="upload" type="file" onChange={onSelectFile} /> <br />
-        <br />
-        {selectedFile && (
-          <img
-            src={preview}
-            style={{ maxWidth: "800px", maxHeight: "600px" }}
-          />
-        )}
-        <br /> <br />
-        <button onClick={detect} className="detect" style={{backgroundColor:"blue",padding:"10px",color:"white"}}>
-          Detect
-        </button>
-        <br />
-        <br />
-      </div>
-      {processing1 && processing2 ? (
-        <h1>processing.......</h1>
-      ) : (
-        <div className="image-detect">
-          {detected && (
-            <h1 style={{ paddingLeft: "50px", color: "white" }}>
-              Detected Image:
-            </h1>
-          )}
-          <br />
-          <br />
-          <br />
-          <div
-            container
-            spacing={2}
-            style={{ paddingLeft: "200px", paddingTop: "10px" }}
-          >
-            <div xs={8}>
-              <div>
-                {detected && (
-                  <img
-                    src={detected}
-                    style={{ maxWidth: "800px", maxHeight: "600px" }}
-                  />
+    <center>
+
+        <div className="home">
+          <div className="homepage">
+            <h1 className="message">Welcome {props.details.user.name} !!!</h1>
+            <input className="upload" type="file" onChange={onSelectFile} /> <br />
+            <br />
+            {selectedFile && (
+              <img
+              src={preview}
+                style={{ maxWidth: "800px", maxHeight: "600px" }}
+                />
                 )}
-              </div>
-            </div>
-            <div xs={8}>
-              <div>
-                {detected && (
-                  <h1 style={{ color: "black" }}>Detected person:</h1>
-                )}
-                {detected && (
-                  <ul style={{ color: "white" }}>
-                    {toolslist.length > 0 &&
-                      toolslist.map((item) => (
-                        <li key={item} style={{ color: "black" }}>
-                          {" "}
-                          <h2 style={{ color: "white" }}>{item}</h2>{" "}
-                        </li>
-                      ))}
-                  </ul>
-                )}
-              </div>
-            </div>
+            <br /> <br />
+            <button onClick={detect} className="detect" style={{backgroundColor:"blue",padding:"10px",color:"white"}}>
+              Detect
+            </button>
+            <br />
+            <br />
           </div>
-          <br />
-          <br />
-          <br />
-          {semantic && (
-            <h1 style={{ paddingLeft: "50px" }}>Segmented Image:</h1>
-          )}
-          <br />
-          <div
-            container
-            spacing={2}
-            style={{ paddingLeft: "200px", paddingTop: "10px" }}
-          >
-            <div xs={8}>
-              <div>
-                {semantic && (
-                  <img
-                    src={semantic}
-                    style={{ maxWidth: "800px", maxHeight: "600px" }}
-                  />
+          {processing1 && processing2 ? (
+            <h1>processing.......</h1>
+            ) : (
+              <div className="image-detect">
+              {detected && (
+                <h1 style={{ paddingLeft: "50px", color: "white" }}>
+                  Detected Image:
+                </h1>
+              )}
+              <br />
+              <br />
+              <br />
+              <div
+                container
+                spacing={2}
+                style={{ paddingLeft: "200px", paddingTop: "10px" }}
+                >
+                <div xs={8}>
+                  <div>
+                    {detected && (
+                      <img
+                      src={detected}
+                      style={{ maxWidth: "800px", maxHeight: "600px" }}
+                      />
+                      )}
+                  </div>
+                </div>
+                <div xs={8}>
+                  <div>
+                    {detected && (
+                      <h1 style={{ color: "black" }}>Detected person:</h1>
+                      )}
+                    {detected && (
+                      <ul style={{ color: "black" }}>
+                        {toolslist.length > 0 &&
+                          toolslist.map((item) => (
+                            <li key={item} style={{ color: "black" }}>
+                              {" "}
+                              <h2 style={{ color: "black" }}>{item}</h2>{" "}
+                            </li>
+                          ))}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+              <br />
+              {semantic && (
+                <h1 style={{ paddingLeft: "50px" }}>Segmented Image:</h1>
                 )}
+              <br />
+              <div
+                container
+                spacing={2}
+                style={{ paddingLeft: "200px", paddingTop: "10px" }}
+                >
+                <div xs={8}>
+                  <div>
+                    {semantic && (
+                      <img
+                      src={semantic}
+                      style={{ maxWidth: "800px", maxHeight: "600px" }}
+                      />
+                      )}
+                  </div>
+                </div>
+                <div xs={4}>
+                  <div>{semantic}</div>
+                </div>
               </div>
             </div>
-            <div xs={4}>
-              <div>{semantic}</div>
-            </div>
-          </div>
+          )}
         </div>
-      )}
-    </div>
+        <div className="logout">
+          <a href="/signup" textDecoration="None" role="button"button="darkblue" padding="10px" color="white">Logout</a>
+        </div>
+      </center>
   );
 };
 

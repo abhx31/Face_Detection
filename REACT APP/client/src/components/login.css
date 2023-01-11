@@ -11,7 +11,7 @@
 }
 .login-card{
     width: 250px;
-    height:390px;
+    height:420px;
     background: linear-gradient(to top,rgba(0,0,0,0.8)70%,(0,0,0,0.8)70%);
     position:relative;
     top: 120px;
@@ -29,4 +29,8 @@
 } 
 .button:hover{
     cursor: pointer;
+}
+.input{
+  margin: auto;
+  padding: 6px;  
 }

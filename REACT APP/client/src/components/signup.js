@@ -40,7 +40,7 @@ const Register = () => {
   return (
     <div className="main">
       <body>
-        <div className="login-card">
+        <div className="signup">
           <h2 style={{fontSize:"45px",margin:"0px 50px"}}>Sign up</h2>
           <br />
           <br />
